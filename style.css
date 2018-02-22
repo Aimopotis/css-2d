@@ -1,0 +1,64 @@
+*{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+.translate, .rotate, .scale, .skewX, .skewY, .skew, .matrix{
+  width: 250px;
+  height: 100px;
+  background-color: rgba(51,163,242,1); 
+  transition: 0.5s ease-in-out;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.center{
+  margin: 0;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.translate:hover {
+  -ms-transform: translate(50px, 100px); /* IE 9 */
+  -webkit-transform: translate(50px, 100px); /* Safari */
+  transform: translate(50px, 100px);
+}
+
+.rotate:hover{
+  -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
+
+.scale:hover{
+  -ms-transform: scale(2, 3); /* IE 9 */
+    -webkit-transform: scale(2, 3); /* Safari */
+    transform: scale(2, 3);
+}
+
+.skewX:hover{
+  -ms-transform: skewX(20deg); /* IE 9 */
+  -webkit-transform: skewX(20deg); /* Safari */
+  transform: skewX(20deg);
+}
+
+.skewY:hover{
+  -ms-transform: skewY(20deg); /* IE 9 */
+  -webkit-transform: skewY(20deg); /* Safari */
+  transform: skewY(20deg);
+}
+
+.skew:hover{
+  -ms-transform: skew(20deg, 10deg); /* IE 9 */
+  -webkit-transform: skew(20deg, 10deg); /* Safari */
+  transform: skew(20deg, 10deg);
+}
+
+.matrix:hover{
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+  -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
